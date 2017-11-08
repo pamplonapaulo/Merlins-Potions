@@ -1,0 +1,17 @@
+// colors palette
+$color-black: #000000;
+$color-blue: #1A8B9D;
+$color-green: #B2D430;
+$color-white: #FFFFFF;
+$color-softGray: #ACA49C;
+
+// fonts 
+@font-face {
+  font-family: 'Droid Serif';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('droidSans.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+$font-1: 'Oswald', sans-serif;
+$font-2: 'Droid Serif', serif; 
+
