@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
     <!-- CSS RESET -->
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" >
     
     <!-- CSS STYLE -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -15,60 +15,67 @@
     <script src="scripts/respond.js"></script>
     <![endif]-->
     
-    <title>Paulo Pamplona</title>
-
     <title>Merlins Potions</title>
 </head>
 <body>
    <header>
-      <div class="hamb">
-          <span></span>
-          <span></span>
-          <span></span>
-      </div>
+      
+<div id ="mainNav">
+    <label for="toggle" class="hamb">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <input type="checkbox" id="toggle"/>
+    <nav class="navigation">
+        <ul id="menu">
+            <a href="#"><li>Potions</li></a>
+            <a href="#"><li>Ingredients</li></a>
+            <a href="#"><li>Books</li></a>
+            <a href="#"><li>Supplies</li></a>
+            <a href="#"><li>Charms</li></a>
+            <a href="#"><li>Clearance!</li></a>
+        </ul>
+        <div class="logIn">
+            <p><a>Sign In</a>or<a>Sign Up</a></p>
+        </div>
+    </nav>
+</div>  
+      <div class="clearIt"></div>
        <div class="logo">
            <div class="name">
-               <h2><strong>MERLIN'S</strong>POTIONS</h2>
+               <h2><strong>MERLIN'S</strong> POTIONS</h2>
            </div>
+           <div class="clearIt"> </div>
            <div class="since">
                <span></span>
-               <p>fine potions since 1026</p>
+                   <p>fine potions since 1026</p>
                <span></span>
            </div>
        </div>
-       <div class="search">
-           <input type="text" name="search" placeholder="Search..">
-       </div>
-       <div class="banner"><h4>Free shipping</h4><p>on orders over $50</p></div> 
        <div class="cart">
            <div class="icon"></div>
            <span>BAG: </span>
        </div>
-       <nav>
-           <ul>
-               <a href="#">
-                   <li>Potions</li>
-               </a>
-               <a href="#">
-                   <li>Ingredients</li>
-               </a>
-               <a href="#">
-                   <li>Books</li>
-               </a>
-               <a href="#">
-                   <li>Supplies</li>
-               </a>
-               <a href="#">
-                   <li>Charms</li>
-               </a>
-               <a href="#">
-                   <li>Clearance!</li>
-               </a>
-           </ul>
-           <div class="logIn">
-               <p><a>Sign In</a>or<a>Sign Up</a></p>
-           </div>
-       </nav>      
+       
+       <div class="search">
+           <input type="text" name="search" placeholder="Search..">
+       </div>
+       <div class="banner"><p><span>Free shipping</span> on orders over $50</p></div> 
+       
+       
+       
+
+       
+       
+       
+       
+       
+       
+       
+
+       
+     
    </header>
    <main class="container">
      <h3>Potions</h3>
@@ -99,27 +106,94 @@
                  <div class="itemInfo"></div>
              </li>
          </ul>
-          
       </div>
-       
+      
+<!--
+<div class="row">
+  <div class="column">
+    <img src="img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="img_nature_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img_fjords_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img_mountains_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img_lights_wide.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Trolltunga">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+    </div>
+  </div>
+</div>       
+-->
    </main>
    <footer>
        <div class="newsletter">
-           <p>Sign up for our newsletter</p>
+           <p>Sign up for our Newsletter</p>
            <p>Sign up for our newsletter &amp; get exclusive discounts!</p>
-           <input type="email" placeholder="Enter your email" name="psw-repeat" required><button type="submit" class="signupBtn">Sign Up</button>
+           <input type="email" placeholder="Enter your email" name="psw-repeat" required><button type="submit" class="signupBtn">Submit</button>
        </div>
        <div class="social-media">
            <ul>
-               <li><img src="" alt="facebook"></li>
-               <li><img src="" alt="twitter"></li>
-               <li><img src="" alt="pinnterest"></li>
-               <li><img src="" alt="thumber"></li>
-               <li><img src="" alt="googleplus"></li>
+               <li><img src="assets/social-icons/Facebook.svg" alt="facebook"></li>
+               <li><img src="assets/social-icons/Twitter.svg" alt="twitter"></li>
+               <li><img src="assets/social-icons/Pinterest.svg" alt="pinnterest"></li>
+               <li><img src="assets/social-icons/Tumblr.svg" alt="tumber"></li>
+               <li><img src="assets/social-icons/Google+.svg" alt="googleplus"></li>
            </ul>
        </div>
        <p>&copy; 2015 Merlin's Potions. All Rights Reserved</p>
    </footer>
     
+    
+    
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

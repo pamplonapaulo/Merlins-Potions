@@ -6,6 +6,12 @@
 /* Table of Content
 ==================================================
 -
+
+
+
+
+
+
 -
 -
 -
@@ -16,5 +22,379 @@
   src: url("webfont.eot");
   /* IE9 Compat Modes */
   src: url("droidSans.ttf") format("truetype"); }
+html {
+  font-size: 62.5%; }
+
+body {
+  text-align: center;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 1.6rem;
+  font-family: 'Oswald', sans-serif;
+  color: #000000;
+  background-color: #FFFFFF; }
+
+a {
+  text-decoration: none; }
+
+/* Helping Classes */
+.claerIt {
+  clear: both; }
+
+header {
+  background: #FFFFFF;
+  z-index: 90;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  color: yellow;
+  /* navigation rulkes */
+  /* END navigation rules */ }
+  header .search {
+    display: none; }
+  header .navigation {
+    position: absolute;
+    margin-top: 60px;
+    width: 100%;
+    z-index: 99; }
+    header .navigation ul {
+      background: #523468;
+      width: 100%;
+      padding: 0; }
+      header .navigation ul li {
+        list-style: none;
+        color: #FFFFFF;
+        text-align: left;
+        border-bottom: 1px solid #6a5483;
+        width: 100%;
+        height: 50px;
+        font-family: "Droid Serif", serif;
+        font-style: italic;
+        padding: 2rem 0 0rem 4rem;
+        font-size: 2rem; }
+      header .navigation ul li:hover {
+        background: #412a56; }
+  header #mainNav nav {
+    height: 0;
+    overflow: hidden; }
+  header #mainNav input[type=checkbox] {
+    position: absolute;
+    top: -999em;
+    /* make sure users won't see it , hide this off the screen */
+    left: -999em; }
+  header #mainNav input[type=checkbox]:checked ~ nav {
+    height: auto;
+    overflow: visible;
+    /*probably not completly necessary, it's here just to ensure that it will work */ }
+  header #mainNav label.hamb {
+    display: block;
+    text-indent: -999em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    float: left;
+    text-align: center;
+    display: inline;
+    line-height: .6;
+    width: 45px;
+    height: 30px;
+    margin: 20px; }
+    header #mainNav label.hamb span {
+      margin: 0;
+      height: 6px;
+      width: 45px;
+      display: block;
+      position: relative;
+      background: #523468;
+      border-radius: 15px;
+      margin-bottom: 4px; }
+  header .logo {
+    float: left;
+    width: 225px;
+    height: 100%;
+    line-height: 1.1rem; }
+    header .logo .name {
+      padding: 0;
+      height: 30px; }
+      header .logo .name h2 {
+        color: #ce2600;
+        font-weight: 100;
+        font-size: 2.9rem; }
+        header .logo .name h2 strong {
+          font-weight: 500; }
+    header .logo .since {
+      width: 100%;
+      display: table;
+      text-align: center; }
+      header .logo .since span {
+        background: #523468;
+        height: 1px;
+        width: 20px;
+        display: table-cell;
+        margin: 5px 0 5px 15px;
+        float: left; }
+      header .logo .since p {
+        color: #51366b;
+        font-weight: 100;
+        line-height: .1;
+        font-style: italic;
+        font-family: "Droid Serif", serif;
+        display: table-cell; }
+      header .logo .since span:last-of-type {
+        float: right;
+        margin: 5px 15px 5px 0; }
+  header .banner {
+    float: left;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background: #ececec;
+    color: #656565;
+    font-family: "Droid Serif", serif;
+    font-weight: 100;
+    font-style: italic;
+    display: table;
+    top: 80px;
+    vertical-align: top;
+    position: absolute; }
+    header .banner p {
+      font-size: 2rem;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle; }
+  header div.cart {
+    display: table;
+    text-align: left;
+    background: black;
+    width: 60px;
+    color: #ececec;
+    float: right; }
+    header div.cart div.icon {
+      margin: 0 auto;
+      text-align: center;
+      background: rgba(255, 0, 0, 0.5);
+      display: table-cell;
+      height: 50px;
+      width: 55px;
+      position: absolute; }
+    header div.cart span {
+      text-align: center;
+      float: right;
+      position: absolute;
+      bottom: 0;
+      color: #b5b3b6;
+      margin: 0 3%; }
+
+main.container {
+  float: none;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 960px;
+  min-width: 320px;
+  display: inline-block;
+  position: relative;
+  padding-top: 140px; }
+  main.container h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: "Droid Serif", serif;
+    font-size: 3rem; }
+  main.container .inventory {
+    text-align: center; }
+    main.container .inventory ul {
+      padding: 0;
+      display: inline-block; }
+    main.container .inventory ul > li {
+      display: inline-grid;
+      list-style: none; }
+    main.container .inventory ul > li > img {
+      width: 180px; }
+      @media only screen and (min-width: 768px) {
+        main.container .inventory ul > li > img {
+          width: 300px; } }
+
+footer {
+  background: #ccc;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  padding: .5rem .5rem .5rem 0;
+  height: 300px; }
+  footer p:last-of-type {
+    font-family: Arial;
+    color: #656565; }
+  footer .newsletter {
+    background: #FFFFFF;
+    margin: 20px;
+    padding: 1rem 1.4rem 2.5rem 1.4rem;
+    height: 100px;
+    border-radius: 2px; }
+    footer .newsletter p {
+      font-family: "Droid Serif", serif;
+      font-style: italic;
+      text-align: left; }
+    footer .newsletter p:last-of-type {
+      font-family: Arial;
+      font-style: normal;
+      font-weight: 100;
+      font-size: 1.4rem; }
+    footer .newsletter input, footer .newsletter button {
+      float: left;
+      font-family: "Oswald", sans-serif; }
+    footer .newsletter input {
+      border: none;
+      background-image: none;
+      background-color: transparent;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      font-family: Arial;
+      border: 1px solid #656565;
+      margin-right: 15px;
+      min-width: 200px;
+      border-radius: 5px;
+      padding: 3px 10px;
+      line-height: 2rem;
+      font-size: 1.2rem; }
+    footer .newsletter button {
+      border: medium none;
+      border-spacing: 0;
+      font-weight: normal;
+      line-height: 1.42rem;
+      list-style: none outside none;
+      margin: 0;
+      text-align: left;
+      text-decoration: none;
+      text-indent: 0;
+      background: #d43e0b;
+      border-radius: 5px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      padding: 8px 20px;
+      font-family: Arial;
+      font-size: 1.4rem; }
+  footer .social-media {
+    position: relative;
+    margin-top: 5rem; }
+    footer .social-media ul {
+      list-style: none;
+      text-align: center;
+      padding: 0; }
+      footer .social-media ul li {
+        display: inline;
+        margin: auto 15px; }
+      footer .social-media ul li img {
+        width: 30px; }
+
+.row > .column {
+  padding: 0 8px; }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.column {
+  float: left;
+  width: 25%; }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black; }
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px; }
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer; }
+
+.mySlides {
+  display: none; }
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white; }
+
+img.demo {
+  opacity: 0.6; }
+
+.active,
+.demo:hover {
+  opacity: 1; }
+
+img.hover-shadow {
+  transition: 0.3s; }
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 /*# sourceMappingURL=style.css.map */
