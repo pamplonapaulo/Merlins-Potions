@@ -37,9 +37,13 @@
             <a href="#"><li>Clearance!</li></a>
         </ul>
         <div class="logIn">
-            <p><a>Sign In</a>or<a>Sign Up</a></p>
+            <p><a>Sign In </a>or <a>Sign Up</a></p>
         </div>
     </nav>
+    <div class="search">
+           <input type="text" name="search" placeholder="Search our stock">
+    </div>
+    
 </div>  
       <div class="clearIt"></div>
        <div class="logo">
@@ -58,51 +62,37 @@
            <span>BAG: </span>
        </div>
        
-       <div class="search">
-           <input type="text" name="search" placeholder="Search..">
-       </div>
+       
        <div class="banner"><p><span>Free shipping</span> on orders over $50</p></div> 
        
-       
-       
-
-       
-       
-       
-       
-       
-       
-       
-
-       
-     
    </header>
+   
    <main class="container">
      <h3>Potions</h3>
       <div class="inventory">
          <ul>
              <li>
-                 <img src="assets/products/aging-potion.png" alt="">
+                 <img src="assets/products/aging-potion.png" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow">
                  <div class="itemInfo"></div>
              </li>
              <li>
-                 <img src="assets/products/bulgeye-potion.png" alt="">
+                 <img src="assets/products/bulgeye-potion.png" alt="" onclick="openModal();currentSlide(2)" class="hover-shadow">
                  <div class="itemInfo"></div>
              </li>
              <li>
-                 <img src="assets/products/dragon-tonic.png" alt="">
+                 <img src="assets/products/dragon-tonic.png" alt="" onclick="openModal();currentSlide(3)" class="hover-shadow">
                  <div class="itemInfo"></div>
              </li>
              <li>
-                 <img src="assets/products/love-potion.png" alt="">
+                 <img src="assets/products/love-potion.png" alt="" onclick="openModal();currentSlide(4)" class="hover-shadow">
                  <div class="itemInfo"></div>
              </li>
              <li>
-                 <img src="assets/products/polyjuice-potion.png" alt="">
+                 <img src="assets/products/polyjuice-potion.png" alt="" onclick="openModal();currentSlide(5)" class="hover-shadow">
                  <div class="itemInfo"></div>
              </li>
              <li>
-                 <img src="assets/products/sleeping-draught.png" alt="">
+                 <img src="assets/products/sleeping-draught.png" alt="" onclick="openModal();currentSlide(6)" class="hover-shadow">
                  <div class="itemInfo"></div>
              </li>
          </ul>
@@ -122,57 +112,83 @@
   <div class="column">
     <img src="img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
   </div>
-</div>
+</div>-->
 
 <div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
   <div class="modal-content">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
 
     <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="img_nature_wide.jpg" style="width:100%">
+      <img src="assets/products/aging-potion.png" >
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="img_fjords_wide.jpg" style="width:100%">
+      <img src="assets/products/bulgeye-potion.png" >
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="img_mountains_wide.jpg" style="width:100%">
+      <img src="assets/products/dragon-tonic.png" >
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="img_lights_wide.jpg" style="width:100%">
+      <img src="assets/products/love-potion.png" >
+    </div>
+    
+    <div class="mySlides">
+      <img src="assets/products/polyjuice-potion.png" >
     </div>
 
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+    <div class="mySlides">
+      <img src="assets/products/sleeping-draught.png" >
+    </div>
+    
     <div class="caption-container">
       <p id="caption"></p>
     </div>
 
     <div class="column">
-      <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+      <img class="demo" src="assets/products/aging-potion.png" onclick="currentSlide(1)" alt="Nature">
     </div>
 
     <div class="column">
-      <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Trolltunga">
+      <img class="demo" src="assets/products/bulgeye-potion.png" onclick="currentSlide(2)" alt="Trolltunga">
     </div>
 
     <div class="column">
-      <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+      <img class="demo" src="assets/products/dragon-tonic.png" onclick="currentSlide(3)" alt="Mountains">
     </div>
 
     <div class="column">
-      <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+      <img class="demo" src="assets/products/love-potion.png" onclick="currentSlide(4)" alt="Lights">
     </div>
+    
+    <div class="column">
+      <img class="demo" src="assets/products/polyjuice-potion.png" onclick="currentSlide(5)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="assets/products/sleeping-draught.png" onclick="currentSlide(6)" alt="Lights">
+    </div>    
+    
   </div>
 </div>       
--->
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
    </main>
    <footer>
        <div class="newsletter">

@@ -54,24 +54,22 @@ header {
   height: 80px;
   width: 100%;
   top: 0;
-  color: yellow;
-  /* navigation rulkes */
   /* END navigation rules */ }
-  /* line 65, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+  /* line 64, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
   header .search {
     display: none; }
-  /* line 71, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+  /* line 68, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
   header .navigation {
     position: absolute;
     margin-top: 60px;
     width: 100%;
     z-index: 99; }
-    /* line 76, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    /* line 74, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
     header .navigation ul {
       background: #523468;
       width: 100%;
       padding: 0; }
-      /* line 82, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+      /* line 80, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
       header .navigation ul li {
         list-style: none;
         color: #FFFFFF;
@@ -83,25 +81,69 @@ header {
         font-style: italic;
         padding: 2rem 0 0rem 4rem;
         font-size: 2rem; }
-      /* line 95, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+      /* line 93, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
       header .navigation ul li:hover {
         background: #412a56; }
-  /* line 112, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    /* line 99, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    header .navigation .logIn {
+      margin-top: -25px;
+      border-top: 1px solid #6a5483;
+      background: #523468;
+      font-family: "Droid Serif", serif;
+      font-style: italic;
+      font-size: 2rem;
+      height: 50px;
+      padding-bottom: 2rem; }
+      /* line 109, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+      header .navigation .logIn p {
+        color: #6a5483; }
+        /* line 112, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+        header .navigation .logIn p a {
+          color: #FFFFFF; }
+  /* line 122, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
   header #mainNav nav {
     height: 0;
     overflow: hidden; }
-  /* line 117, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+  /* line 127, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
   header #mainNav input[type=checkbox] {
     position: absolute;
     top: -999em;
-    /* make sure users won't see it , hide this off the screen */
     left: -999em; }
-  /* line 123, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+  /* line 133, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
   header #mainNav input[type=checkbox]:checked ~ nav {
     height: auto;
-    overflow: visible;
-    /*probably not completly necessary, it's here just to ensure that it will work */ }
-  /* line 129, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    overflow: visible; }
+  /* line 138, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+  header #mainNav input[type=checkbox]:checked ~ div.search {
+    display: block;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    padding-right: 30px;
+    padding-top: 30px;
+    background: #FFFFFF;
+    width: 70%;
+    height: 45px;
+    text-align: right; }
+    /* line 151, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    header #mainNav input[type=checkbox]:checked ~ div.search input {
+      border: none;
+      background-image: none;
+      background-color: transparent;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      font-family: Arial;
+      border: 1px solid #656565;
+      width: 250px;
+      border-radius: 5px;
+      padding: 5px 10px;
+      height: 40px;
+      margin-top: -70px;
+      font-size: 1.7rem;
+      margin-bottom: 20px; }
+  /* line 171, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
   header #mainNav label.hamb {
     display: block;
     text-indent: -999em;
@@ -118,7 +160,7 @@ header {
     width: 45px;
     height: 30px;
     margin: 20px; }
-    /* line 149, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    /* line 191, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
     header #mainNav label.hamb span {
       margin: 0;
       height: 6px;
@@ -128,30 +170,30 @@ header {
       background: #523468;
       border-radius: 15px;
       margin-bottom: 4px; }
-  /* line 163, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+  /* line 204, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
   header .logo {
     float: left;
     width: 225px;
     height: 100%;
     line-height: 1.1rem; }
-    /* line 169, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    /* line 210, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
     header .logo .name {
       padding: 0;
       height: 30px; }
-      /* line 173, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+      /* line 214, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
       header .logo .name h2 {
         color: #ce2600;
         font-weight: 100;
         font-size: 2.9rem; }
-        /* line 178, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+        /* line 219, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
         header .logo .name h2 strong {
           font-weight: 500; }
-    /* line 184, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    /* line 225, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
     header .logo .since {
       width: 100%;
       display: table;
       text-align: center; }
-      /* line 189, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+      /* line 230, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
       header .logo .since span {
         background: #523468;
         height: 1px;
@@ -159,7 +201,7 @@ header {
         display: table-cell;
         margin: 5px 0 5px 15px;
         float: left; }
-      /* line 198, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+      /* line 239, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
       header .logo .since p {
         color: #51366b;
         font-weight: 100;
@@ -167,11 +209,11 @@ header {
         font-style: italic;
         font-family: "Droid Serif", serif;
         display: table-cell; }
-      /* line 206, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+      /* line 247, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
       header .logo .since span:last-of-type {
         float: right;
         margin: 5px 15px 5px 0; }
-  /* line 216, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+  /* line 257, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
   header .banner {
     float: left;
     width: 100%;
@@ -186,13 +228,13 @@ header {
     top: 80px;
     vertical-align: top;
     position: absolute; }
-    /* line 231, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    /* line 272, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
     header .banner p {
       font-size: 2rem;
       display: table-cell;
       text-align: center;
       vertical-align: middle; }
-  /* line 240, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+  /* line 281, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
   header div.cart {
     display: table;
     text-align: left;
@@ -200,7 +242,7 @@ header {
     width: 60px;
     color: #ececec;
     float: right; }
-    /* line 248, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    /* line 289, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
     header div.cart div.icon {
       margin: 0 auto;
       text-align: center;
@@ -209,7 +251,7 @@ header {
       height: 50px;
       width: 55px;
       position: absolute; }
-    /* line 258, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    /* line 299, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
     header div.cart span {
       text-align: center;
       float: right;
@@ -218,7 +260,7 @@ header {
       color: #b5b3b6;
       margin: 0 3%; }
 
-/* line 270, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+/* line 311, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
 main.container {
   float: none;
   text-align: left;
@@ -228,32 +270,32 @@ main.container {
   display: inline-block;
   position: relative;
   padding-top: 140px; }
-  /* line 280, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+  /* line 321, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
   main.container h3 {
     font-size: 1.2rem;
     text-align: center;
     font-family: "Droid Serif", serif;
     font-size: 3rem; }
-  /* line 287, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+  /* line 328, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
   main.container .inventory {
     text-align: center; }
-    /* line 290, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    /* line 331, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
     main.container .inventory ul {
       padding: 0;
       display: inline-block; }
-    /* line 296, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    /* line 337, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
     main.container .inventory ul > li {
       display: inline-grid;
       list-style: none; }
-    /* line 307, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    /* line 348, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
     main.container .inventory ul > li > img {
       width: 180px; }
       @media only screen and (min-width: 768px) {
-        /* line 307, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+        /* line 348, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
         main.container .inventory ul > li > img {
           width: 300px; } }
 
-/* line 317, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+/* line 358, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
 footer {
   background: #ccc;
   bottom: 0;
@@ -262,33 +304,33 @@ footer {
   position: relative;
   padding: .5rem .5rem .5rem 0;
   height: 300px; }
-  /* line 326, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+  /* line 367, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
   footer p:last-of-type {
     font-family: Arial;
     color: #656565; }
-  /* line 331, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+  /* line 372, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
   footer .newsletter {
     background: #FFFFFF;
     margin: 20px;
     padding: 1rem 1.4rem 2.5rem 1.4rem;
     height: 100px;
     border-radius: 2px; }
-    /* line 338, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    /* line 379, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
     footer .newsletter p {
       font-family: "Droid Serif", serif;
       font-style: italic;
       text-align: left; }
-    /* line 344, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    /* line 385, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
     footer .newsletter p:last-of-type {
       font-family: Arial;
       font-style: normal;
       font-weight: 100;
       font-size: 1.4rem; }
-    /* line 351, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    /* line 392, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
     footer .newsletter input, footer .newsletter button {
       float: left;
       font-family: "Oswald", sans-serif; }
-    /* line 356, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    /* line 397, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
     footer .newsletter input {
       border: none;
       background-image: none;
@@ -304,7 +346,7 @@ footer {
       padding: 3px 10px;
       line-height: 2rem;
       font-size: 1.2rem; }
-    /* line 373, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    /* line 414, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
     footer .newsletter button {
       border: medium none;
       border-spacing: 0;
@@ -322,143 +364,96 @@ footer {
       padding: 8px 20px;
       font-family: Arial;
       font-size: 1.4rem; }
-  /* line 400, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+  /* line 441, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
   footer .social-media {
     position: relative;
     margin-top: 5rem; }
-    /* line 405, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+    /* line 446, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
     footer .social-media ul {
       list-style: none;
       text-align: center;
       padding: 0; }
-      /* line 410, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+      /* line 451, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
       footer .social-media ul li {
         display: inline;
         margin: auto 15px; }
-      /* line 415, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+      /* line 456, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
       footer .social-media ul li img {
         width: 30px; }
 
-/* line 425, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
-.row > .column {
-  padding: 0 8px; }
-
-/* line 429, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
-.row:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-/* line 435, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+/* line 466, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
 .column {
   float: left;
   width: 25%; }
 
-/* The Modal (background) */
-/* line 441, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+/* line 471, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
 .modal {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 300px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black; }
+  background-color: rgba(0, 0, 0, 0.75); }
 
-/* Modal Content */
-/* line 455, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+/* line 484, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: #FFFFFF;
   margin: auto;
   padding: 0;
   width: 90%;
-  max-width: 1200px; }
+  max-width: 960px; }
 
-/* The Close Button */
-/* line 465, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+/* line 493, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
 .close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
+  color: #000000;
+  top: 15px;
+  right: 15px;
   font-size: 35px;
-  font-weight: bold; }
+  float: right;
+  height: 30px;
+  width: 30px; }
 
-/* line 474, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+/* line 504, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
 .close:hover,
 .close:focus {
   color: #999;
   text-decoration: none;
   cursor: pointer; }
 
-/* line 481, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+/* line 511, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
 .mySlides {
-  display: none; }
+  display: none;
+  padding-top: 40px; }
+  /* line 515, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+  .mySlides img {
+    width: 100%; }
 
-/* Next & previous buttons */
-/* line 486, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none; }
-
-/* Position the "next button" to the right */
-/* line 504, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px; }
-
-/* On hover, add a black background color with a little bit see-through */
-/* line 510, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8); }
-
-/* Number text (1/3 etc) */
-/* line 516, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0; }
-
-/* line 524, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+/* line 520, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
 .caption-container {
   text-align: center;
-  background-color: black;
+  background-color: #FFFFFF;
   padding: 2px 16px;
-  color: white; }
+  color: #000000; }
 
-/* line 531, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+/* line 527, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
 img.demo {
   opacity: 0.6; }
 
-/* line 535, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+/* line 531, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
 .active,
 .demo:hover {
   opacity: 1; }
 
-/* line 540, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+/* line 536, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
 img.hover-shadow {
   transition: 0.3s; }
 
-/* line 544, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
+/* line 540, /Users/paulopamplona/Desktop/enext/root/scss/style.scss */
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 

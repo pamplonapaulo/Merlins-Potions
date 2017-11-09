@@ -48,8 +48,6 @@ header {
   height: 80px;
   width: 100%;
   top: 0;
-  color: yellow;
-  /* navigation rulkes */
   /* END navigation rules */ }
   header .search {
     display: none; }
@@ -75,18 +73,57 @@ header {
         font-size: 2rem; }
       header .navigation ul li:hover {
         background: #412a56; }
+    header .navigation .logIn {
+      margin-top: -25px;
+      border-top: 1px solid #6a5483;
+      background: #523468;
+      font-family: "Droid Serif", serif;
+      font-style: italic;
+      font-size: 2rem;
+      height: 50px;
+      padding-bottom: 2rem; }
+      header .navigation .logIn p {
+        color: #6a5483; }
+        header .navigation .logIn p a {
+          color: #FFFFFF; }
   header #mainNav nav {
     height: 0;
     overflow: hidden; }
   header #mainNav input[type=checkbox] {
     position: absolute;
     top: -999em;
-    /* make sure users won't see it , hide this off the screen */
     left: -999em; }
   header #mainNav input[type=checkbox]:checked ~ nav {
     height: auto;
-    overflow: visible;
-    /*probably not completly necessary, it's here just to ensure that it will work */ }
+    overflow: visible; }
+  header #mainNav input[type=checkbox]:checked ~ div.search {
+    display: block;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    padding-right: 30px;
+    padding-top: 30px;
+    background: #FFFFFF;
+    width: 70%;
+    height: 45px;
+    text-align: right; }
+    header #mainNav input[type=checkbox]:checked ~ div.search input {
+      border: none;
+      background-image: none;
+      background-color: transparent;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      font-family: Arial;
+      border: 1px solid #656565;
+      width: 250px;
+      border-radius: 5px;
+      padding: 5px 10px;
+      height: 40px;
+      margin-top: -70px;
+      font-size: 1.7rem;
+      margin-bottom: 20px; }
   header #mainNav label.hamb {
     display: block;
     text-indent: -999em;
@@ -291,48 +328,38 @@ footer {
       footer .social-media ul li img {
         width: 30px; }
 
-.row > .column {
-  padding: 0 8px; }
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both; }
-
 .column {
   float: left;
   width: 25%; }
 
-/* The Modal (background) */
 .modal {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 300px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black; }
+  background-color: rgba(0, 0, 0, 0.75); }
 
-/* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: #FFFFFF;
   margin: auto;
   padding: 0;
   width: 90%;
-  max-width: 1200px; }
+  max-width: 960px; }
 
-/* The Close Button */
 .close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
+  color: #000000;
+  top: 15px;
+  right: 15px;
   font-size: 35px;
-  font-weight: bold; }
+  float: right;
+  height: 30px;
+  width: 30px; }
 
 .close:hover,
 .close:focus {
@@ -341,48 +368,16 @@ footer {
   cursor: pointer; }
 
 .mySlides {
-  display: none; }
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none; }
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px; }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8); }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0; }
+  display: none;
+  padding-top: 40px; }
+  .mySlides img {
+    width: 100%; }
 
 .caption-container {
   text-align: center;
-  background-color: black;
+  background-color: #FFFFFF;
   padding: 2px 16px;
-  color: white; }
+  color: #000000; }
 
 img.demo {
   opacity: 0.6; }
