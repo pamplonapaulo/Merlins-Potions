@@ -8,8 +8,8 @@ $color-red: #ce2600;
 // fonts 
 @font-face {
   font-family: 'Droid Serif';
-  src: url('webfont.eot'); /* IE9 Compat Modes */
-  src: url('droidSans.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('../assets/droid-sans/droidSans.ttf')
+      format('truetype'),
 }
 
 $font-1: 'Oswald', sans-serif;
