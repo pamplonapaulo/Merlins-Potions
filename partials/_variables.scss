@@ -8,10 +8,11 @@ $color-red: #ce2600;
 // fonts 
 @font-face {
   font-family: 'Droid Serif';
-  src: url('../assets/droid-sans/droidSans.ttf')
-      format('truetype'),
+  src: url('../assets/droid-sans/droidSans.ttf');
 }
 
+
+$font-0: serif;
 $font-1: 'Oswald', sans-serif;
 $font-2: 'Droid Serif', serif; 
 

@@ -7,6 +7,11 @@
     <!-- CSS RESET -->
     <link rel="stylesheet" href="css/reset.css" type="text/css" >
     
+    <!-- ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
     <!-- CSS STYLE -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
    	    
@@ -17,179 +22,177 @@
     
     <title>Merlins Potions</title>
 </head>
+
 <body>
-   <header>
-      
-<div id ="mainNav">
-    <label for="toggle" class="hamb">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-    <input type="checkbox" id="toggle"/>
-    <nav class="navigation">
-        <ul id="menu">
-            <a href="#"><li>Potions</li></a>
-            <a href="#"><li>Ingredients</li></a>
-            <a href="#"><li>Books</li></a>
-            <a href="#"><li>Supplies</li></a>
-            <a href="#"><li>Charms</li></a>
-            <a href="#"><li>Clearance!</li></a>
-        </ul>
-        <div class="logIn">
-            <p><a>Sign In </a>or <a>Sign Up</a></p>
-        </div>
-    </nav>
-    <div class="search">
-           <input type="text" name="search" placeholder="Search our stock">
-    </div>
-    
-</div>  
-      <div class="clearIt"></div>
-       <div class="logo">
+    <header>
+       
+        <!--Navigation-->
+        <div id ="mainNav">
+            <input type="checkbox" id="toggle"/>
+            <label for="toggle" class="hamb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="navigation">
+                <ul id="menu">
+                    <a href="#"><li>Potions</li><span>&#8595;</span></a>
+                    <a href="#"><li>Ingredients</li><span>&#8595;</span></a>
+                    <a href="#"><li>Books</li><span>&#8595;</span></a>
+                    <a href="#"><li>Supplies</li><span>&#8595;</span></a>
+                    <a href="#"><li>Charms</li><span>&#8595;</span></a>
+                    <a href="#"><li>Clearance!</li><span>&#8595;</span></a>
+                </ul>
+                <div class="logIn">
+                    <p><a>Sign In </a>or <a>Sign Up</a></p>
+                </div>
+            </nav>
+            
+            <!--Search-->
+            <div class="search">
+
+                    <i class="material-icons">search</i>                                                      
+                   <input type="text" name="search" placeholder="Search our stock">
+            </div>
+
+        </div>  
+
+        <!--Logo-->
+        <div class="logo">
            <div class="name">
                <h2><strong>MERLIN'S</strong> POTIONS</h2>
            </div>
-           <div class="clearIt"> </div>
+           <div class="clearIt"></div>
            <div class="since">
                <span></span>
                    <p>fine potions since 1026</p>
                <span></span>
            </div>
-       </div>
-       <div class="cart">
-           <div class="icon"></div>
-           <span>BAG: </span>
-       </div>
-       
-       
-       <div class="banner"><p><span>Free shipping</span> on orders over $50</p></div> 
-       
-   </header>
+        </div>
+
+        <!--Cart CSS Image-->
+        <div class="cart">
+           <div class="icon">
+           
+           
+            <div class="handler"></div>
+            
+            <div class="cauldron">
+                <div class="shade-depth"></div>
+                <span class="leg left"></span>
+                <span class="leg middle"></span>
+                <span class="leg right"></span>
+            </div>
+
+           </div>
+           
+           <span>BAG: </span><span id="onCart">1</span>
+           
+        </div>
+
+        <!--Banner-->
+        <div class="banner"><p><span>Free shipping</span> on orders over $50</p></div> 
+
+</header>
    
-   <main class="container">
-     <h3>Potions</h3>
-      <div class="inventory">
-         <ul>
-             <li>
+<main class="container">
+        <h3>Potions</h3>
+        
+        <!--Products Inventory-->
+        <div class="inventory">
+            <ul>
+                <li>
                  <img src="assets/products/aging-potion.png" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                 <div class="itemInfo"></div>
-             </li>
-             <li>
+                 <div class="itemInfo">
+                     <p>Aging Potion</p>
+                     <p>$29.99</p>
+                 </div>
+                </li>
+                <li>
                  <img src="assets/products/bulgeye-potion.png" alt="" onclick="openModal();currentSlide(2)" class="hover-shadow">
                  <div class="itemInfo"></div>
-             </li>
-             <li>
+                </li>
+                <li>
                  <img src="assets/products/dragon-tonic.png" alt="" onclick="openModal();currentSlide(3)" class="hover-shadow">
                  <div class="itemInfo"></div>
-             </li>
-             <li>
+                </li>
+                <li>
                  <img src="assets/products/love-potion.png" alt="" onclick="openModal();currentSlide(4)" class="hover-shadow">
                  <div class="itemInfo"></div>
-             </li>
-             <li>
+                </li>
+                <li>
                  <img src="assets/products/polyjuice-potion.png" alt="" onclick="openModal();currentSlide(5)" class="hover-shadow">
                  <div class="itemInfo"></div>
-             </li>
+                </li>
              <li>
                  <img src="assets/products/sleeping-draught.png" alt="" onclick="openModal();currentSlide(6)" class="hover-shadow">
                  <div class="itemInfo"></div>
              </li>
-         </ul>
-      </div>
-      
-<!--
-<div class="row">
-  <div class="column">
-    <img src="img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
-  </div>
-</div>-->
+            </ul>
+        </div>
 
-<div id="myModal" class="modal">
-  <div class="modal-content">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
+        <!--Modal Lightox (Content)-->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
 
-    <div class="mySlides">
-      <img src="assets/products/aging-potion.png" >
-    </div>
+                <div class="mySlides">
+                    <img src="assets/products/aging-potion.png" alt="aging potion" />
+                </div>
 
-    <div class="mySlides">
-      <img src="assets/products/bulgeye-potion.png" >
-    </div>
+                <div class="mySlides">
+                    <img src="assets/products/bulgeye-potion.png" >
+                </div>
 
-    <div class="mySlides">
-      <img src="assets/products/dragon-tonic.png" >
-    </div>
+                <div class="mySlides">
+                    <img src="assets/products/dragon-tonic.png" >
+                </div>
 
-    <div class="mySlides">
-      <img src="assets/products/love-potion.png" >
-    </div>
-    
-    <div class="mySlides">
-      <img src="assets/products/polyjuice-potion.png" >
-    </div>
+                <div class="mySlides">
+                    <img src="assets/products/love-potion.png" >
+                </div>
 
-    <div class="mySlides">
-      <img src="assets/products/sleeping-draught.png" >
-    </div>
-    
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
+                <div class="mySlides">
+                    <img src="assets/products/polyjuice-potion.png" >
+                </div>
 
-    <div class="column">
-      <img class="demo" src="assets/products/aging-potion.png" onclick="currentSlide(1)" alt="Nature">
-    </div>
+                <div class="mySlides">
+                    <img src="assets/products/sleeping-draught.png" >
+                </div>
 
-    <div class="column">
-      <img class="demo" src="assets/products/bulgeye-potion.png" onclick="currentSlide(2)" alt="Trolltunga">
-    </div>
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
 
-    <div class="column">
-      <img class="demo" src="assets/products/dragon-tonic.png" onclick="currentSlide(3)" alt="Mountains">
-    </div>
+                <div class="column">
+                    <img class="demo" src="assets/products/aging-potion.png" onclick="currentSlide(1)" alt="Nature">
+                </div>
 
-    <div class="column">
-      <img class="demo" src="assets/products/love-potion.png" onclick="currentSlide(4)" alt="Lights">
-    </div>
-    
-    <div class="column">
-      <img class="demo" src="assets/products/polyjuice-potion.png" onclick="currentSlide(5)" alt="Mountains">
-    </div>
+                <div class="column">
+                    <img class="demo" src="assets/products/bulgeye-potion.png" onclick="currentSlide(2)" alt="Trolltunga">
+                </div>
 
-    <div class="column">
-      <img class="demo" src="assets/products/sleeping-draught.png" onclick="currentSlide(6)" alt="Lights">
-    </div>    
-    
-  </div>
-</div>       
+                <div class="column">
+                    <img class="demo" src="assets/products/dragon-tonic.png" onclick="currentSlide(3)" alt="Mountains">
+                </div>
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-   </main>
+                <div class="column">
+                    <img class="demo" src="assets/products/love-potion.png" onclick="currentSlide(4)" alt="Lights">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="assets/products/polyjuice-potion.png" onclick="currentSlide(5)" alt="Mountains">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="assets/products/sleeping-draught.png" onclick="currentSlide(6)" alt="Lights">
+                </div>
+                
+                <button>add to cart</button>
+        
+            </div>
+        </div>
+</main>
    <footer>
        <div class="newsletter">
            <p>Sign up for our Newsletter</p>
@@ -209,6 +212,7 @@
    </footer>
     
     
+    <script type="text/javascript" src="js/inventory.js"></script>
     
     <script type="text/javascript" src="js/script.js"></script>
 </body>
